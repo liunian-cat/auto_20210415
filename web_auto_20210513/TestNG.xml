@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Default Suite" parallel="methods" thread-count="3">
+  <test name="webdriver_demo">
+    <classes>
+      <!--<class name="com.meyoung.actions.ScreenShot"/>-->
+        <class name="com.cathy.actions.ActionTest">
+            <methods>
+                <include name="getText"/>
+            </methods>
+        </class>
+    </classes>
+  </test> <!-- webdriver_demo -->
+  <listeners>
+          <listener class-name="com.cathy.testng.RetryListener"/>
+          <listener class-name="com.cathy.testng.TestResultListener"/>
+  </listeners>
+</suite> <!-- Default Suite -->
