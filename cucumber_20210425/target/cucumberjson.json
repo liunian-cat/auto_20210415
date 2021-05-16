@@ -1,0 +1,110 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#language: zh-CN"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "测试正确的账号登录",
+        "description": "",
+        "id": "163登录功能;测试正确的账号登录",
+        "type": "scenario",
+        "keyword": "场景",
+        "steps": [
+          {
+            "result": {
+              "duration": 6591321601,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "打开163网站",
+            "match": {
+              "location": "Steps1.openUrl()"
+            },
+            "keyword": "当"
+          },
+          {
+            "result": {
+              "duration": 2709800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "在email文本框中输入\"meyoungtester\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "meyoungtester",
+                  "offset": 13
+                }
+              ],
+              "location": "Steps1.inputEmail(String)"
+            },
+            "keyword": "并且"
+          },
+          {
+            "result": {
+              "duration": 65600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "在密码框输入\"meyoung123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "meyoung123",
+                  "offset": 7
+                }
+              ],
+              "location": "Steps1.inputPwd(String)"
+            },
+            "keyword": "并且"
+          },
+          {
+            "result": {
+              "duration": 41200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "点击登录按钮",
+            "match": {
+              "location": "Steps1.clickLoginButton()"
+            },
+            "keyword": "当"
+          },
+          {
+            "result": {
+              "duration": 60500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "登录成功",
+            "match": {
+              "location": "Steps1.loginSuccess()"
+            },
+            "keyword": "那么"
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@Automation"
+          },
+          {
+            "line": 4,
+            "name": "@p0"
+          }
+        ]
+      }
+    ],
+    "name": "163登录功能",
+    "description": "",
+    "id": "163登录功能",
+    "keyword": "功能",
+    "uri": "src/test/features/first_cucumber.feature"
+  }
+]
